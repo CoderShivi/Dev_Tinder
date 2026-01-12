@@ -1,8 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import userReduser from './userSlice'
+import userReducer from './userSlice'
+import feedReducer from "./feedSlice"
+
 const appStore=configureStore({
     reducer:{
-         user:userReduser,
+         user:userReducer,
+         feed:feedReducer
     },
    
 })
